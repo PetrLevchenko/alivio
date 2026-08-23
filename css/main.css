@@ -1,0 +1,125 @@
+/* .lato-regular {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.noto-serif-georgian {
+  font-family: "Noto Serif Georgian", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+.nunito-sans {
+  font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100,
+    "YTLC" 500;
+} */
+html {
+  box-sizing: border-box;
+}
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
+.container {
+  max-width: 1920px;
+}
+:root {
+  --color-019: #01996d;
+  --color-42: #424242;
+  --color-f: #fff;
+  --color-0: #000;
+  --color-29: #292929;
+  --color-48: #484848;
+  --color-c4: #c4c4c4;
+  --color-2458: #245852;
+  --font-family: "Lato", sans-serif;
+  --second-family: "Noto Serif Georgia", serif;
+  --third-family: "Nunito Sans", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  margin: 0;
+  list-style: none;
+  padding-left: 0;
+}
+h1, h2, h3, h4, p {
+  margin: 0;
+}
+.header {
+}
+.header__top {
+  display: flex;
+  align-items: center;
+  background-color: var(--color-f);
+}
+.header__top__logo {
+  color: var(--color-019);
+  padding: 30px 172px 30px 274px;
+}
+.header__top__nav {
+  display: flex;
+  width: 557px;
+  font: 500 20px "Lato", sans-serif;
+  gap: 72px;
+}
+.header__top__nav a {
+  color: var(--color-29);
+}
+.auth__form {
+  padding-left: 247px;
+  font: 400 20px "Lato", sans-serif;
+  transition: 0.5s;
+}
+.header__action__btn {
+
+  
+}
+.sign__btn {
+  padding: 13px 32px 38px;
+  border: none;
+  color: #000;
+  border-radius: 4px;
+  background-color: transparent;
+  
+}
+.sign__btn:hover {
+  transition: 0.5s;
+  background-color: var(--color-019);
+  color: var(--color-f);
+}
+.start__btn {
+  padding: 13px 50px;
+  border: none;
+  background: #01996d;
+  border-radius: 4px;
+  color: #fff;
+  line-height: 1.25;
+  
+}
+.start__btn:hover {
+  transition: 0.5s;
+  background-color: var(--color-f);
+  color: var(--color-0);
+}
+.header__bg {
+  background-image: url(../img/BG__header.png);
+  height: 100vh;
+}
+.header__bg__headline {
+}
+.headline__h1 {
+}
+.headline__p {
+}
+.headline__btn {
+}
