@@ -362,6 +362,7 @@ p {
   transition: 0.5s;
   align-items: center;
 }
+
 .video__flex__item_left_btn:hover {
   color: #fff;
   background: #245852;
@@ -375,14 +376,150 @@ p {
   background-size: contain;
   background-repeat: no-repeat;
 }
+
 .video__flex__item_right iframe {
   width: 100%;
   height: 100%;
 }
 
-@media screen and (max-width: 1920px) {
-  
+.our-product {
+  max-width: 1440px;
+  margin: 0 auto 127px;
 }
+
+.our-product__flex {
+  display: flex;
+
+}
+
+.container__our-product__flex_left_img {
+  position: relative;
+  width: 638px;
+  aspect-ratio: 638 / 573;
+  border-radius: 18px;
+  background-color: #01996d;
+  position: relative;
+  margin-left: 113px;
+  margin-right: 86px;
+}
+
+.our-product__flex_left {
+  position: absolute;
+  left: 49%;
+  transform: translateX(-50%);
+  bottom: 0;
+}
+
+.our-product__flex_left img {}
+
+.our-product__flex_right {
+  max-width: 584px;
+}
+
+.our-product__flex_right_p-top {
+  font: 600 25px / 1.57 "Lato", sans-serif;
+  color: #424242;
+  margin-bottom: 10px;
+}
+
+.our-product__flex_right_h2 {
+  font: 700 50px / 1.57 "Georgia", sans-serif;
+  color: #01996d;
+  margin-bottom: 20px;
+}
+
+.our-product__flex_right_p-bottom {
+  font: 400 20px / 1.445 "Lato", sans-serif;
+  max-width: 530px;
+  margin-bottom: 34px;
+}
+
+.our-product__flex_right_btn {
+  border: 1px solid #01996d;
+  border-radius: 4px;
+  display: block;
+  padding: 20px 50px;
+  background: #01996d;
+  font: 400 20px / 1.25 "Lato", sans-serif;
+  color: #fff;
+  transition: 0.5s;
+}
+
+.our-product__flex_right_btn:hover {
+  background-color: #fff;
+  color: #424242;
+  transition: 0.5s;
+}
+
+.our-product__card {
+  position: absolute;
+  left: -62px;
+  bottom: -77px;
+  width: 46.55%;
+  /* height: 293px; */
+  aspect-ratio: 296 / 293;
+  box-shadow: 0 4px 18px 0 rgba(165, 165, 165, 0.25);
+  background-color: #fff;
+  border-radius: 4px;
+}
+
+.our-product__card_h3 {
+  font: 600 14px / 1.57 "Lato", sans-serif;
+  text-align: center;
+  color: #000;
+  margin-bottom: 6px;
+  padding-top: 21px;
+}
+
+.hr {
+  border: 0.75px solid #000;
+  background-color: #000;
+  width: 110px;
+  height: 0;
+  margin: 0 auto;
+  margin-bottom: 14px;
+}
+
+.container__img__card {
+  width: 57px;
+  height: 57px;
+  border-radius: 50%;
+  background-color: #01996d;
+  margin: 0 auto 10px;
+  overflow: hidden;/* обрезает всё, что вылезает за круг */
+}
+.container__img__card img {
+  object-fit: cover;/* картинка заполняет область, лишнее обрезается */
+  object-position: center;/* центрирует кадр */
+  width: 100%;
+  height: 100%;
+  display: block; /* убирает нижний отступ из‑за строчного поведения img */
+}
+
+.our-product__card_p-name {
+  font: 400 11px / 1.57 "Lato", sans-serif;
+  text-align: center;
+  color: #000;
+  margin-bottom: 23px;
+}
+
+.our-product__card__ul {
+  font: 700 15px / 1.57 "Georgia", sans-serif;
+  color: #000;
+  text-align: center;
+}
+
+.our-product__card__ul p {
+  font: 400 10px / 1.57 "Lato", sans-serif;
+  text-align: center;
+  color: #000;
+  padding: 14px;
+}
+.our-product__card__ul:first-child {
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 1920px) {}
 
 @media screen and (max-width: 1720px) {
   .header__top__logo {
@@ -406,27 +543,31 @@ p {
     gap: 58px;
     justify-content: center;
   }
+
   .video__flex__item_left {
     padding-left: 0;
-}
+  }
 
-.video__flex {
-  flex-direction: column;
-  gap: 70px;
-  align-items: center;
-  padding-top: 100px;
-}
-.video__flex__item_left_btn {
+  .video__flex {
+    flex-direction: column;
+    gap: 70px;
+    align-items: center;
+    padding-top: 100px;
+  }
+
+  .video__flex__item_left_btn {
     display: block;
     margin: 0 auto;
-}
-.video__flex__item_left_h2 {
-  padding-top: 0;
-  text-align: center;
-}
-.video__flex__item_right {
-  margin-bottom: 100px;
-}
+  }
+
+  .video__flex__item_left_h2 {
+    padding-top: 0;
+    text-align: center;
+  }
+
+  .video__flex__item_right {
+    margin-bottom: 100px;
+  }
 }
 
 @media screen and (max-width: 1330px) {
@@ -448,6 +589,14 @@ p {
   .how-it-works__bottom__item-03 {
     padding: 0;
   }
+  .our-product__flex {
+    flex-wrap: wrap;
+    gap: 116px;
+    justify-content: center;
+}
+.container__our-product__flex_left_img {
+  margin: 0 60px;
+}
 }
 
 @media screen and (max-width: 1024px) {
@@ -466,16 +615,19 @@ p {
     top: 50%;
     transform: translate(-50%, -50%);
   }
-  
+
 }
+
 @media screen and (max-width: 884px) {
   .video__flex__item_right {
     position: relative;
     padding-bottom: 56.25%;
     height: 0;
-    overflow: hidden; /* чтобы ничего не вылезло */
+    overflow: hidden;
+    /* чтобы ничего не вылезло */
     width: 100%;
   }
+
   .video__flex__item_right iframe {
     position: absolute;
     top: 0;
@@ -484,7 +636,12 @@ p {
     height: 100%;
     border: 0;
   }
+  .our-product__flex_left {
+  width: 65%;
 }
+
+}
+
 @media screen and (max-width: 624px) {
   .header__top__nav {
     flex-direction: column;
@@ -512,8 +669,36 @@ p {
   .how-it-works p {
     text-align: center;
   }
-.video__flex {
-  padding: 100px 20px 0;
+
+  .video__flex {
+    padding: 100px 20px 0;
+  }
+  .our-product__card {
+    position: absolute;
+    width: 50%;
+    height: 202px;
+}
+.our-product__card__ul p {
+    padding: 9px;
+}
+
+.our-product__card_h3 {
+    padding-top: 9px;
+}.our-product__card_p-name {
+    margin-bottom: -6px;
+}
+.our-product__card__ul p {
+    padding: 0px;
+}
+.hr {
+    margin-bottom: 5px;
+    max-width: 43%;
+}
+.our-product__flex_right {
+    padding: 0 20px;
+}
+.our-product__flex_right_h2 {
+  font-size: 43px;
 }
 }
 
@@ -540,15 +725,43 @@ p {
   .how-it-works__top__h-p__p {
     font-size: 18px;
   }
+
   .video__flex__item_left_h2 {
-    font-size: 40px;  
+    font-size: 40px;
   }
+  .our-product__flex_right_btn {
+    padding: 20px;
+  }
+  .our-product__card_h3 {
+    font-size: 8px;
+  }
+  .container__img__card {
+    width: 37px;
+    height: 37px;
+    margin: 0 auto;
+  }
+  .our-product__card_p-name {
+    font-size: 8px;
+
+}
+.our-product__card__ul {
+  font-size: 10px;
+}
+.our-product__card__ul p {
+  font-size: 6px;
+}
+.our-product__card {
+    height: auto;
+    left: -29px;
+    bottom: -116px;
+}
 }
 
 @media screen and (max-width: 200px) {
   .video__flex__item_left_h2 {
-    font-size: 30px;  
+    font-size: 30px;
   }
+
   .video__flex__item_left_btn {
     font-size: 16px;
     padding: 10px 30px;
